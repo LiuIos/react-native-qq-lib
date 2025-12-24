@@ -48,7 +48,7 @@ RCT_EXPORT_MODULE();
     self = [super init];
     if (self) {
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleOpenURL:) name:@"RCTOpenURLNotification" object:nil];
-        [self _autoRegisterAPI];
+//        [self _autoRegisterAPI];
     }
     return self;
 }
@@ -71,6 +71,11 @@ RCT_EXPORT_MODULE();
     else {
         [QQApiInterface handleOpenURL:[NSURL URLWithString:url] delegate:self];
     }
+}
+
+RCT_EXPORT_METHOD(initApi:(NSString *)universalLink)
+{
+    [self _autoRegisterAPI:universalLink];
 }
 
 RCT_EXPORT_METHOD(isQQInstalled:(RCTPromiseResolveBlock)resolve reject:(RCTPromiseRejectBlock)reject)
@@ -223,7 +228,7 @@ RCT_EXPORT_METHOD(logout)
 }
 
 
-- (void)_autoRegisterAPI
+- (void)_autoRegisterAPI:(NSString *)universalLink
 {
     NSString *appId = nil;
     NSArray *list = [[[NSBundle mainBundle] infoDictionary] valueForKey:@"CFBundleURLTypes"];

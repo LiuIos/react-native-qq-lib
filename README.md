@@ -6,9 +6,9 @@ React Native bridging library that integrates QQ SDKs. QQ 登陆 分享，集成
 
 ## 前言
 
-首先向各位声明，本库是在 [react-native-qq](https://github.com/reactnativecn/react-native-qq) 基础上进行重写。  
+首先向各位声明，本库是在 [react-native-qq](https://github.com/reactnativecn/react-native-qq) 基础上进行重写。
 
-本身是维护给自己使用的，考虑到自身使用和其它开发者的需要，最终决定开一个新仓库，提供给新项目使用。  
+本身是维护给自己使用的，考虑到自身使用和其它开发者的需要，最终决定开一个新仓库，提供给新项目使用。
 
 最后，感谢 [lvbingru](https://github.com/lvbingru)，[tdzl2003](https://github.com/tdzl2003) 和各位开发者为 react-native-qq 做出的贡献。
 
@@ -23,13 +23,13 @@ React Native bridging library that integrates QQ SDKs. QQ 登陆 分享，集成
 ### 首先安装 npm 包
 
 ```bash
-yarn add github:haxibiao/react-native-qq-lib
+yarn add github:LiuIos/react-native-qq-lib
 ```
 
 或
 
 ```bash
-npm install -D github:haxibiao/react-native-qq-lib
+npm install -D github:LiuIos/react-native-qq-lib
 ```
 
 然后执行
@@ -129,8 +129,7 @@ import * as QQAPI from 'react-native-qq-lib';
 
 #### QQAPI.init()
 
-初始化，调用其他api时请先调用该api（3.1.0以前版本无需调用此方法,会自动初始化）
-
+初始化，调用其他 api 时请先调用该 api（3.1.0 以前版本无需调用此方法,会自动初始化）
 
 #### QQAPI.login([scopes])
 
@@ -228,7 +227,6 @@ if (RegExp(/http:\/\//).exec(_image) || RegExp(/https:\/\//).exec(_image)) {
 
 ```
 
-
 ## 常见问题
 
 #### Android: 调用 QQAPI.login()没有反应
@@ -241,4 +239,4 @@ if (RegExp(/http:\/\//).exec(_image) || RegExp(/https:\/\//).exec(_image)) {
 
 #### Android: 应用商店检测到未授权前获取隐私信息
 
-出现这个原因是因为sdk在同意隐私政策之前就自动初始化了，目前3.1.0版本已将初始化api暴露，取消了自动初始化，可在RN端自由调整初始化时机。
+出现这个原因是因为 sdk 在同意隐私政策之前就自动初始化了，目前 3.1.0 版本已将初始化 api 暴露，取消了自动初始化，可在 RN 端自由调整初始化时机。

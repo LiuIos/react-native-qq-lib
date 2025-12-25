@@ -243,7 +243,8 @@ RCT_EXPORT_METHOD(logout)
             }
         }
     }
-    _qqapi = [[TencentOAuth alloc] initWithAppId:appId andDelegate:self];
+    _qqapi = [[TencentOAuth alloc] initWithAppId:appId andUniversalLink:universalLink andDelegate:self];
+    [TencentOAuth setIsUserAgreedAuthorization:YES];
 
 }
 

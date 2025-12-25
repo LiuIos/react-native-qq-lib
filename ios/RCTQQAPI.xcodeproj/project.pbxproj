@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84554A5A2EFCD00C00ACF86E /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84554A582EFCD00C00ACF86E /* TencentOpenAPI.framework */; };
 		913932201C232D310085E3BA /* RCTQQAPI.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9139321F1C232D310085E3BA /* RCTQQAPI.h */; };
 		913932221C232D310085E3BA /* RCTQQAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 913932211C232D310085E3BA /* RCTQQAPI.m */; };
 /* End PBXBuildFile section */
@@ -25,10 +26,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		84554A582EFCD00C00ACF86E /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
+		84554A592EFCD00C00ACF86E /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
 		9139321C1C232D310085E3BA /* libRCTQQAPI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTQQAPI.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9139321F1C232D310085E3BA /* RCTQQAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTQQAPI.h; sourceTree = "<group>"; };
 		913932211C232D310085E3BA /* RCTQQAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTQQAPI.m; sourceTree = "<group>"; };
-		913932401C232ED60085E3BA /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
 		9139325C1C233E370085E3BA /* RCTQQAPI.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = RCTQQAPI.debug.xcconfig; sourceTree = "<group>"; };
 		9139325D1C233E480085E3BA /* RCTQQAPI.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = RCTQQAPI.release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84554A5A2EFCD00C00ACF86E /* TencentOpenAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,7 +68,8 @@
 		9139321E1C232D310085E3BA /* RCTQQAPI */ = {
 			isa = PBXGroup;
 			children = (
-				913932401C232ED60085E3BA /* TencentOpenAPI.framework */,
+				84554A582EFCD00C00ACF86E /* TencentOpenAPI.framework */,
+				84554A592EFCD00C00ACF86E /* TencentOpenApi_IOS_Bundle.bundle */,
 				9139321F1C232D310085E3BA /* RCTQQAPI.h */,
 				913932211C232D310085E3BA /* RCTQQAPI.m */,
 			);
@@ -111,6 +115,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 913932131C232D310085E3BA;

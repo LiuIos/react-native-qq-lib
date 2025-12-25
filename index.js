@@ -1,7 +1,7 @@
 /**
  * Created by Yun on 2015-12-12.
  */
-import { NativeModules, NativeEventEmitter } from "react-native";
+import { NativeModules, NativeEventEmitter, Platform } from "react-native";
 
 const { QQAPI } = NativeModules;
 
